@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — PicSift</title>
+    <meta name="description" content="Help and support for PicSift. Contact us, troubleshoot common issues, find what you need.">
+    <meta name="theme-color" content="#EDEAE6">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="canonical" href="https://picsift.com/support.html">
+    <style>
+        @font-face {
+            font-family: 'AvenirNext';
+            src: local('Avenir Next'), local('AvenirNext-Regular');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'AvenirNext';
+            src: local('Avenir Next Medium'), local('AvenirNext-Medium');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'AvenirNext';
+            src: local('Avenir Next Demi Bold'), local('AvenirNext-DemiBold');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #EDEAE6;
+            --bg-card: #FFFFFF;
+            --bg-frame: #F7F5F3;
+            --amber: #D4871C;
+            --text-primary: #1C1917;
+            --text-body: #44403C;
+            --text-mid: #78716C;
+            --text-light: #A8A29E;
+            --border: rgba(0, 0, 0, 0.07);
+        }
+
+        body {
+            font-family: 'AvenirNext', 'Avenir Next', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text-body);
+            -webkit-font-smoothing: antialiased;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .frame {
+            background: var(--bg-frame);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 680px;
+            width: 100%;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .back {
+            display: inline-block;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: var(--amber);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.2s;
+        }
+
+        .back:hover { color: var(--text-primary); }
+
+        h1 {
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .intro {
+            font-size: 0.9375rem;
+            color: var(--text-body);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            border-left: 3px solid var(--amber);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 2.5rem;
+            border-radius: 4px;
+        }
+
+        .contact-card-eyebrow {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: var(--text-body);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card a {
+            color: var(--amber);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            color: var(--text-primary);
+        }
+
+        h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.005em;
+        }
+
+        .faq {
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            border-radius: 10px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-q {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-a {
+            font-size: 0.875rem;
+            line-height: 1.65;
+            color: var(--text-body);
+        }
+
+        .faq-a a {
+            color: var(--amber);
+            text-decoration: none;
+        }
+
+        .faq-a a:hover {
+            color: var(--text-primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.25rem 2rem 0.5rem;
+            font-size: 0.6875rem;
+            color: var(--text-light);
+        }
+
+        footer a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        footer a:hover { color: var(--text-mid); }
+
+        @media (max-width: 560px) {
+            body { padding: 1rem; }
+            .frame { padding: 2rem 1.5rem; border-radius: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="frame">
+    <a href="index.html" class="back">&larr; PicSift</a>
+
+    <h1>Support</h1>
+    <p class="intro">
+        Run into something unexpected, have a question, or want to send a feature
+        request? Drop us a note. PicSift is a small operation; replies are usually
+        same-day during the week.
+    </p>
+
+    <div class="contact-card">
+        <div class="contact-card-eyebrow">Get in touch</div>
+        <p>
+            Email: <a href="mailto:support@picsift.com">support@picsift.com</a>
+        </p>
+        <p style="font-size: 0.8125rem; color: var(--text-mid); margin-bottom: 0;">
+            For privacy or data questions, write to
+            <a href="mailto:privacy@picsift.com">privacy@picsift.com</a>.
+        </p>
+    </div>
+
+    <h2>Frequently asked</h2>
+
+    <div class="faq">
+        <div class="faq-q">Does PicSift upload my photos?</div>
+        <div class="faq-a">
+            No. All scoring, face detection, search, and curation happens on your
+            device using Apple's CoreML framework. Your photos, scores, and face
+            data never leave the device. The
+            <a href="privacy.html">Privacy Policy</a> goes into more detail.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-q">I bought Pro on Mac &mdash; why is iPhone asking me to buy it again?</div>
+        <div class="faq-a">
+            PicSift uses Apple's Universal Purchase, which means one purchase
+            unlocks the app across Mac, iPhone, and iPad. If you bought Pro on
+            Mac and iPhone is prompting you to buy again, try
+            <strong>Settings &rarr; Restore Purchase</strong> while signed in
+            with the same Apple ID. If that doesn't unlock it, write to
+            <a href="mailto:support@picsift.com">support@picsift.com</a>
+            with your transaction ID and we'll sort it.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-q">My library has 5,000 photos &mdash; will PicSift be slow?</div>
+        <div class="faq-a">
+            PicSift is designed for libraries up to several thousand photos.
+            Scoring runs on Apple's Neural Engine and takes a few minutes
+            depending on device. You can background the app mid-run on iPhone
+            and iPad; scoring continues and finishes via a background task.
+            Mac runs in the foreground.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-q">How do I report a bug or share a diagnostic?</div>
+        <div class="faq-a">
+            In the app: <strong>Settings &rarr; About &rarr; Share a Diagnostic</strong>.
+            That bundles a redacted system log into a file you can attach to email.
+            Nothing is sent automatically &mdash; you choose where it goes.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-q">Can I export my keepers to a folder, not just Apple Photos?</div>
+        <div class="faq-a">
+            Yes. On Mac, choose any folder via the Finder. On iPhone and iPad,
+            export to Files (any cloud or local destination), Apple Photos
+            (as a new album), or directly through the share sheet to AirDrop,
+            Messages, Mail, and so on.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-q">What if I delete the app or move to a new device?</div>
+        <div class="faq-a">
+            Your photos are untouched &mdash; PicSift never moves or modifies
+            them. The scores and curation decisions live in PicSift's local
+            database; reinstalling clears that database. If you've enabled
+            optional iCloud sync, your curation decisions (keep / reject /
+            star) follow you to the new device.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-q">How do I request a feature or suggest a change?</div>
+        <div class="faq-a">
+            Same address &mdash;
+            <a href="mailto:support@picsift.com">support@picsift.com</a>.
+            We read every email. Tell us what you tried, what you expected,
+            and what you wanted instead.
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 PicSift &middot; A <a href="https://syrinxventures.com">Syrinx Ventures</a> app
+</footer>
+
+</body>
+</html>
